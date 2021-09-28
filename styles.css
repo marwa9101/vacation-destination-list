@@ -1,0 +1,60 @@
+/*reset the defaults of browser's styles to 0*/
+h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+image{
+    max-width: 100%;
+}
+body{
+    font-family: arial;
+    color: #333;
+}
+/*styling the header and the main elements***
+  set the two elements in the main (form and article) next each other by set the display flex, margin auto to be in the center*/
+header{
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+}
+/*styling the form and the article in the main element*/
+/*set the width of the 2 sides leaving 15% of the leftover space as a gutter between the 2 columns*/
+main form{
+    width: 40%;
+}
+main article{
+    width: 45%;
+}
+h1, h2, h3, h4, p{
+    margin-bottom: 1em;
+}
+#title{
+    text-align: center;
+}
+/*styling forms can be challenging to style, here are just a few basic rules to help this one look a little better*/
+form label{
+    display: block;
+    margin-bottom: 0.5em;
+}
+input, textarea, #destination_details_form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 1em ;
+    border: 1px solid #666;
+    padding: 10px;
+    box-sizing: border-box;/*هذا سيقوم بتضمين عرض الهوامش الداخلية والخارجيى بادينغ ومارجن من ضمن العرض الكلي للعنصر والذي هنا 40 بالمية*/
+}
+.card{
+    background-color: #efefef;
+    padding: 20px;
+    margin-bottom: 20px;
+}
